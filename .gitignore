@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+venv/
+.venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+.envrc
+config/.env
+config/.env.*
+!config/.env.example
+.pgpass
+*.pem
+*.p12
+*.pfx
+get-pip.py
+
+# Airflow local configuration and runtime files
+airflow.cfg
+config/airflow.cfg
+/logs/*
+!/logs/.gitkeep
+airflow.db
+airflow.db-shm
+airflow.db-wal
+
+# Generated ETL data
+/data/*.parquet
+/data/weather_data.json
+!/data/.gitkeep
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
